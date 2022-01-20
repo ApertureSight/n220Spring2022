@@ -15,8 +15,10 @@ function setup(){
 }
 
 function draw(){
+//moon color
     fill(191, 191, 189);
-    stroke(0,0,0);
+stroke(0,0,0);
+//moons overlapping
 circle(390,130,100);
 circle(370,175,70);
 //Central Wing / body
