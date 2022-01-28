@@ -11,11 +11,12 @@ function setup(){
   y=300;
   xspeed =10;
   yspeed =10;
-  
+  frameRate(24);
 }
 
 function draw(){
   background(0);
+  speed(.5);
 
   fill(0,250,250)
   ellipse(x,y,80,60);
