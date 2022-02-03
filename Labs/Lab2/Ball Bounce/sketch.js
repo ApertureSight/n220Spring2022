@@ -1,4 +1,4 @@
-//ADam Wright 
+//Adam Wright 
 //1-27-2022
 //N220
 
