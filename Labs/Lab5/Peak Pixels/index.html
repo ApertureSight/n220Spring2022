@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab05  </title>
+    <style type= "text/css">
+    
+    #box{
+        height:100px;
+        width: 100px;
+        background-color: green;
+        cursor: pointer;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="box" onclick="increase()"></div>
+    <script type="text/javascript">
+        function increase() {
+            var x = document.getElementById('box');
+
+            var boxWidth = x.offsetWidth +(.10 * x.offsetWidth) +"px";
+
+            var boxHeight = x.offsetHeight +(.10 * x.offsetHeight) + "px";
+
+            x.style.width = boxWidth;
+            x.style.height = boxHeight;
+
+
+        }
+    </script>
+  
+
+
+   
+</body>
+</html>
