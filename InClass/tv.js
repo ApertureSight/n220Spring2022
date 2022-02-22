@@ -1,5 +1,12 @@
 // create tv
 
+JOURNAL = [1,34,5,6,7,7,8];
+
+
+for (let i = 0; i < JOURNAL.length; i++) {
+console.log(JOURNAL.i);
+
+}
 let tv = {
     frameSize: 400,
     framePosition: 100,
@@ -26,12 +33,12 @@ if (mouseIsPressed == true){
         tv.screenColor = 'blue';
     }
 
-function tv(x,y){
+// function tv(x,y){
 
-    this.xpos = x;
-    this.ypos = y;
-   //tv framme
-   rect(x, y, 400, 300, 50);
-   //tv screen
-   rect(x, y, 350, )
-}
+//     this.xpos = x;
+//     this.ypos = y;
+//    //tv framme
+//    rect(x, y, 400, 300, 50);
+//    //tv screen
+//    rect(x, y, 350, )
+// }

@@ -1,14 +1,8 @@
-let dvTest = document.getElementById ("dvTest");
-console.log(dvTest);
 
-dvTest.innerHTML = "hello World";
-dvTest.style.backgroundColor= "#00ff99";
+JOURNAL = [1,34,5,6,7,7,8];
 
-let result = 1;
-for (let counter = 0; counter < 10; counter = counter + 1) {
-  result = result * 2;
+
+for (let i = 0; i < JOURNAL.length; i++) {
+  let entry = JOURNAL[i];
+console.log(JOURNAL.i);
 }
-console.log(result);
-// → 1024
-
-onclick
