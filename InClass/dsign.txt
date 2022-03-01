@@ -1,0 +1,11 @@
+Write a funciton:
+Takes an array of numbers as an argument
+counts how many numbers in the array are above 20
+Returns 
+    count < 3 The count of the numbers
+    else count > 3, -1 
+
+    Then test theat function by calling it with a few arrays and logging out the return result
+    For instance sending a 3 object array willl return (2) a 4 object arrray will return -1
+
+    

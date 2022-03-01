@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="godCode">
+
+        <!-- This is where we print the array -->
+    </div>
+
+    <script>
+// Creates the array
+    var code = ["up", "up", "down", "down", "left", "right", "left", "right","a","b", "start"];
+// creates a placeholder to build our string
+    var codeString = "";
+// loop that iterates through the array and prints it to the innerHTML element of the DIV
+    for(let i = 0; i< code.length; i++){
+        // targets the div we made
+        let ele = document.getElementById('godCode')
+        //adds each value in the array to the div and appends '-' to it
+        ele.innerHTML += code[i] + '-';
+
+    }
+    </script>
+    
+</body>
+</html>

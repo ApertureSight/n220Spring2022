@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Creates a button when clicked will change the text within the Div -->
+    <input type = 'button' onclick = 'changeData()' value ='Click Me!!!'>
+    <!-- div to hold the button and innerHTML -->
+    <div id = 'opposites'>
+        
+
+    <!-- This is where we will have our button. -->
+    </div>
+
+
+</body>
+<script>
+
+    //I dont know why it isn't listening to me. It makes sense to me but not the program. I ran out of time :/
+let changeData = () =>{
+    let opposite = document.getElementById('opposites');
+    opposite.innerHTML = 'Yes';
+
+    if(opposite.innerHTML = 'Yes' ){
+
+        opposite.innerHTML = 'No';
+    }
+    else if(opposite.innerHTML = 'No')
+    {
+        opposite.innerHTML = 'Yes';
+    }
+
+}
+
+</script>
+</html>
