@@ -1,0 +1,99 @@
+<!-- Adam Wright
+03/03/2022
+Spring N220 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .box{
+        height: 200px;
+        width:  200px;
+        border:blue;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .click{
+        background-color: chartreuse;
+        font-weight: bold;
+    }
+    #clickedItems{
+        font-size: 55px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+    }
+
+
+</style>
+</head>
+<body>
+    <div id ="clickChange">
+        </div>
+        <div class="main">
+            <div class = "box" id='1' onclick="changeMod(1)">
+            <!-- Text goes here -->
+            One </div>
+            <div class = "box" id='2' onclick="changeMod(2)">
+            <!-- Text goes here -->
+            Two
+        </div>
+        <div class = "box"id='3' onclick="changeMod(3)">
+            <!-- Text goes here -->
+            Three
+        </div>
+        <div class = "box"id='4' onclick="changeMod(4)">
+            <!-- Text goes here -->
+            Four
+        </div>
+        <div class = "box" id='5' onclick="changeMod(5)">
+            <!-- Text goes here -->
+            Five
+        </div>
+        <div class = "box" id= '6' onclick="changeMod(6)">
+            <!-- Text goes here -->
+            Six
+        </div>
+    </div>
+<script>
+
+    const changeMod=(id)=>{
+
+        const clickChange = document.getElementById("clickChange");
+
+        //Loop to move through the Div's
+
+        for(let i = 1; i <= 6; i++){
+        //gets the id of the element to be manipulated
+            const element = document.getElementById(i)
+            if(i == id){
+                // adds the change to the clicked element
+                element.classList.add('click');
+                clickChange.textContent = element.textContent
+            }
+            //removes the change from the clicked element
+            else{
+                element.classList.remove('click');
+            }
+                
+            }
+    }
+</script>
+</body>
+</html>
