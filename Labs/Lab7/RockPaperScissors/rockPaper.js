@@ -37,24 +37,24 @@ function printResult(){
     if(computerChoice ===  userChoice){
     resultDisplay.innerHTML = "Draw"
     }
-    else if(computerChoice = 'Rock' && userChoice == 'Paper'){
-        resultDisplay.innerHTML = 'Paper Wraps Rock'
+    else if(computerChoice == 'Rock' && userChoice == 'Paper'){
+        resultDisplay.innerHTML = 'User Wins'
     }
-    else if(computerChoice = 'Paper' && userChoice == 'Scissors'){
-        resultDisplay.innerHTML = 'Scissors cut Paper'
+    else if(computerChoice == 'Paper' && userChoice == 'Scissors'){
+        resultDisplay.innerHTML = 'User Wins'
     }
-    else if(computerChoice = 'Scissors' && userChoice == 'Rock'){
-        resultDisplay.innerHTML = "Rock smashes Scissors"
+    else if(computerChoice == 'Scissors' && userChoice == 'Rock'){
+        resultDisplay.innerHTML = "User Wins"
     }
-    else if(computerChoice = 'Rock' && userChoice == 'Scissor'){
-        resultDisplay.innerHTML = 'Rock Smashes Scissors'
+    else if(computerChoice == 'Rock' && userChoice == 'Scissors'){
+        resultDisplay.innerHTML = 'Computer Wins'
     }
-        else if(computerChoice = 'Paper' && userChoice == 'Rock'){
-            resultDisplay.innerHTML = 'Paper Wraps Rock'
-        }
-        else if(computerChoice = 'Scissors' && userChoice == 'Paper'){
-            resultDisplay.innerHTML = "Scissors cut through paper!"
-        }
+    else if(computerChoice == 'Paper' && userChoice == 'Rock'){
+            resultDisplay.innerHTML = 'Computer wins'
+    }
+     else if(computerChoice == 'Scissors' && userChoice == 'Paper'){
+            resultDisplay.innerHTML = "Computer Wins"
+    }
     else if(computerChoice == 'Guard' || userChoice == 'Guard'){
             resultDisplay.innerHTML = 'Blocked!'
     }
