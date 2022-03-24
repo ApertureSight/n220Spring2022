@@ -11,8 +11,8 @@ function calculateGratuity(){
 
     let tipTotal = Math.round(tip * preTip);
     let final = tipTotal + preTip;
-    tipDiv.innerHTML += tipTotal;
-    totalDiv.innerHTML += final;
+    tipDiv.innerHTML == 'Tip: ',  tipTotal;
+    totalDiv.innerHTML == 'Total: ', final;
 //     console.log(tipTotal);
 // console.log(final);
 // console.log(preTip);
