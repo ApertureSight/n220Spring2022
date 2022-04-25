@@ -34,7 +34,7 @@ function generateComputerChoice(){
     computerChoiceDisplay.innerHTML = computerChoice
 }
 function printResult(){
-    if(computerChoice ===  userChoice){
+    if(computerChoice ==  userChoice){
     resultDisplay.innerHTML = "Draw"
     }
     else if(computerChoice == 'Rock' && userChoice == 'Paper'){
@@ -47,13 +47,7 @@ function printResult(){
         resultDisplay.innerHTML = "User Wins"
     }
     else if(computerChoice == 'Rock' && userChoice == 'Scissors'){
-        resultDisplay.innerHTML = 'Computer Wins'
-    }
-    else if(computerChoice == 'Paper' && userChoice == 'Rock'){
-            resultDisplay.innerHTML = 'Computer wins'
-    }
-     else if(computerChoice == 'Scissors' && userChoice == 'Paper'){
-            resultDisplay.innerHTML = "Computer Wins"
+        resultDisplay.innerHTML = 'Rock Smashes Scissors'
     }
     else if(computerChoice == 'Guard' || userChoice == 'Guard'){
             resultDisplay.innerHTML = 'Blocked!'
