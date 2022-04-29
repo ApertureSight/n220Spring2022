@@ -12,7 +12,7 @@ class Alien {
     this.currentImg = 'A';
     this.pts = pointValue;
     this.radius = 20;
-    this.xdir = 3;
+    this.xdir = 5;
     
     
   }
@@ -44,6 +44,6 @@ class Alien {
 //moves them down a row each time they hit the edge
   shiftDown(){
     this.xdir = -this.xdir;
-    this.y = this.y + this.h;
+    this.y = this.y + this.h ;
   }
 }

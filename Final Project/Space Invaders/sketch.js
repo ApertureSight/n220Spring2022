@@ -12,7 +12,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(800, 800);
   frameRate(10);
   imageMode(CENTER); 
   ship = new Ship();
@@ -59,9 +59,8 @@ function setup() {
   console.log(aliens);
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+
+
 
 function draw() {
   background(50);
