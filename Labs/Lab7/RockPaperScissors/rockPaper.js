@@ -38,23 +38,17 @@ function printResult(){
     resultDisplay.innerHTML = "Draw"
     }
     else if(computerChoice == 'Rock' && userChoice == 'Paper'){
-        resultDisplay.innerHTML = 'Paper Wraps Rock'
+        resultDisplay.innerHTML = 'User Wins'
     }
     else if(computerChoice == 'Paper' && userChoice == 'Scissors'){
-        resultDisplay.innerHTML = 'Scissors cut Paper'
+        resultDisplay.innerHTML = 'User Wins'
     }
     else if(computerChoice == 'Scissors' && userChoice == 'Rock'){
-        resultDisplay.innerHTML = "Rock smashes Scissors"
+        resultDisplay.innerHTML = "User Wins"
     }
     else if(computerChoice == 'Rock' && userChoice == 'Scissors'){
         resultDisplay.innerHTML = 'Rock Smashes Scissors'
     }
-        else if(computerChoice == 'Paper' && userChoice == 'Rock'){
-            resultDisplay.innerHTML = 'Paper Wraps Rock'
-        }
-        else if(computerChoice == 'Scissors' && userChoice == 'Paper'){
-            resultDisplay.innerHTML = "Scissors cut through paper!"
-        }
     else if(computerChoice == 'Guard' || userChoice == 'Guard'){
             resultDisplay.innerHTML = 'Blocked!'
     }
