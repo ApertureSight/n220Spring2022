@@ -119,10 +119,10 @@ function keyPressed(){
     lasers.push(laser);
   }
   if(keyIsDown(RIGHT_ARROW)){
-    ship.setDir(1);
+    ship.setDir(3);
   }
  else if(keyIsDown(LEFT_ARROW)){
-    ship.setDir(-1);
+    ship.setDir(-3);
   }
   
 }
