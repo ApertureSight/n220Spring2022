@@ -144,6 +144,9 @@ function gameOver(){
   textSize(30);
   textAlign(CENTER);
   text("Score :" + points, width /2, height /2 + 40);
+  textSize(30);
+  textAlign(CENTER);
+  text("Press 'Ctrl + R' to play again.", width /2, height /2 + 80);
   noLoop(); 
 
 }
