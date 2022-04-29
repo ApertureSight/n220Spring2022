@@ -20,7 +20,7 @@ function setup() {
   let startY = 80;
   
   //bottom row of aliens
-  for(var i = 0; i < 15; i++)
+  for(var i = 0; i < 10; i++)
     {
       aliens[i] = new Alien(i * startX + 80, startY, alien1a, alien1b, 5)
     }
@@ -35,6 +35,27 @@ function setup() {
       offset ++;
       
     }
+//third row
+
+  startY = 120;
+  let offset1 = 0;
+  for(var l = 20; l < 30; l++)
+  {
+    aliens[l] = new Alien(offset1 * startX + 80, startY, alien1a, alien1b, 10)
+    offset1 ++;
+    
+  }
+//4th row
+
+  startY = 160;
+  let offset2 = 0;
+  for(var m = 30; m < 40; m++)
+  {
+    aliens[m] = new Alien(offset2 * startX + 80, startY, alien1a, alien1b, 10)
+    offset2 ++;
+    
+  }
+
   console.log(aliens);
 }
 
